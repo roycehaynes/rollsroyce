@@ -1,0 +1,21 @@
+{{!< default}}
+{{#post}}
+
+<article class="art simple {{post_class}}">
+<header class="art-header">
+<div class="art-header-inner" style="margin-top: 0px; opacity: 1;">
+<time class="art-time">{{date published_at format="MMMM Do, YYYY"}}</time>
+<h2 class="art-title">{{title}}</h2>
+<p class="art-subtitle"></p>
+</div>
+</header>
+
+<div class="art-body">
+<div class="art-body-inner">
+{{content}}
+</div>
+
+</div>
+</article>
+
+{{/post}}

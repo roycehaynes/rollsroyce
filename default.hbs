@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="{{meta_description}}">
+<meta name="author" content="{{@blog.title}}">
+
+<!-- Twitter Card -->
+{{#if post}}
+{{#post}}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{> custom/twitter_handle}}">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{excerpt}}">
+<meta name="twitter:creator" content="{{author.name}}">
+<meta name="twitter:image:src" content="{{> custom/gravatar_url}}">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{@blog.title}}">
+<meta property="og:description" content="{{excerpt}}">
+<meta property="og:image" content="{{> custom/gravatar_url}}">
+<meta property="og:site_name" content="{{@blog.title}}">
+<meta property="fb:admins" content="">
+{{/post}}
+{{else}}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{> custom/twitter_handle}}">
+<meta name="twitter:title" content="{{@blog.title}}">
+<meta name="twitter:description" content="{{meta_descirption}}">
+<meta name="twitter:creator" content="{{@blog.title}}">
+<meta name="twitter:image:src" content="{{> custom/gravatar_url}}">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{@blog.title}}">
+<meta property="og:description" content="{{meta_description}}">
+<meta property="og:image" content="{{> custom/gravatar_url}}">
+<meta property="og:site_name" content="{{@blog.title}}">
+<meta property="fb:admins" content="">
+{{/if}}
+
+<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+{{#if post}}
+{{#post}}
+<title>{{title}} | {{@blog.title}}</title>
+{{/post}}
+{{else}}
+<title>{{@blog.title}}</title>
+{{/if}}
+
+{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+<div class="wrapper">
+
+<!-- MENU -->
+{{#if post}}
+<nav class="nav fixed">
+{{else}}
+<nav class="nav fixed">
+{{/if}}
+
+<a id="logo" href="{{@blog.url}}">
+<h1>{{@blog.title}}</h1>
+</a>
+<ul class="nav-primary">
+{{> custom/navigation this}}
+</ul>
+
+</nav>
+
+{{! Everything else gets inserted here }}
+{{{body}}}
+
+<footer class="footer">
+  <div class="back-to-top">
+    <a href="">Back to top</a>
+  </div>
+  <div class="footer-nav">
+      <p>{{@blog.title}}</p>
+  </div>
+  <aside class="offsite-links">
+    <a class="twitter-link" href="http://www.twitter.com/{{> custom/twitter_handle this}}">Twitter</a> /
+    <a class="github-link" href="http://github.com/{{> custom/github_handle this}}">GitHub</a> / 
+    <a class="rss-link" href="{{ @blog.url }}/rss">RSS</a>
+    <p>
+    <a target="_blank" href="https://github.com/roycehaynes/rollsroyce">rollsroyce theme</a> by <a target="_blank" href="http://www.twitter.com/roycehaynes">@roycehaynes</a>
+    </p>
+    Powered by <a target="_blank" href="http://www.ghost.org">Ghost</a>
+  </aside>
+  <!-- javascripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="{{@blog.url}}/assets/js/fittext.js"></script>
+  <script src="{{@blog.url}}/assets/js/app.js"></script>
+  <script src="{{@blog.url}}/assets/js/respond.min.js"></script>
+
+  <script type="text/javascript">
+
+  {{> custom/ga this}}
+
+  (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+      t.src='//www.google-analytics.com/analytics.js';
+      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+      ga('create',ga_ua);ga('send','pageview');
+  </script>
+
+  
+</footer>
+</div> <!-- end of wrapper -->
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+</body>
+</html>
