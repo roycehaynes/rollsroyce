@@ -1,6 +1,6 @@
 # Rolls Royce
 
-A Ghost theme.
+A [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
 
 
 ### How to install
