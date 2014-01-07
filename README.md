@@ -1,8 +1,8 @@
 # Rolls Royce
 
-![Rolls Royce screenshot](https://raw.github.com/roycehaynes/rollsroyce/master/rollsroyce-2.png)
-
 A [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
+
+![Rolls Royce screenshot](https://raw.github.com/roycehaynes/rollsroyce/master/rollsroyce-2.png)
 
 
 ### How to install
