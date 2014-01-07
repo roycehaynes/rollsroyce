@@ -7,9 +7,7 @@ A [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
 
 1. Navigate to your Ghost theme directory ghost/content/themes
 
-2. Clone theme repo using below command
-
-```git clone git@github.com:roycehaynes/rollsroyce.git "rollsroyce"```
+2. Clone theme repo using below command ```git clone git@github.com:roycehaynes/rollsroyce.git "rollsroyce"```
 
 3. Restart ghost and log into your dashboard
 
