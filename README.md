@@ -1,5 +1,7 @@
 # Rolls Royce - A SEO friendly, responsive [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
 
+![Rolls Royce screenshot](https://raw.github.com/roycehaynes/rollsroyce/master/rollsroyce-2.png)
+
 ### Features
 
 - Runs on Ghost v0.3.3 or greater
