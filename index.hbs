@@ -1,11 +1,20 @@
 {{!< default}}
 <div id="home">
-<!--     <div class="cover">
-        {{#if @blog.cover}}
-            <img src="{{@blog.cover}}">
-        {{/if}}
-    </div> -->
     <div class="posts">
-        {{> posts this}}
+        <nav class="art-list">
+          <ul class="art-list-body">
+            {{#foreach posts }}
+              <li class="art-list-item">
+                <div class="art-list-item-title-and-time">
+                  <h2 class="art-list-title">
+                    <a href="{{ @blog.url }}{{ url }}">{{ title }}</a>
+                  </h2>
+                  <div class="art-list-time">{{date published_at format="MMMM Do, YYYY"}}</div>
+                </div>
+                <p>{{excerpt}}</p>
+              </li>
+            {{/foreach}}
+          </ul>
+        </nav>
     </div>
 </div>

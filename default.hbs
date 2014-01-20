@@ -12,33 +12,31 @@
 {{#if post}}
 {{#post}}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="{{> custom/twitter_handle}}">
+<meta name="twitter:site" content="{{! TODO: ADD TWITTER HANDLE HERE }}">
 <meta name="twitter:title" content="{{title}}">
 <meta name="twitter:description" content="{{excerpt}}">
 <meta name="twitter:creator" content="{{author.name}}">
-<meta name="twitter:image:src" content="{{> custom/gravatar_url}}">
+<meta name="twitter:image:src" content="{{! TODO: ADD GRAVATAR URL HERE }}">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{@blog.title}}">
 <meta property="og:description" content="{{excerpt}}">
-<meta property="og:image" content="{{> custom/gravatar_url}}">
+<meta property="og:image" content="{{! TODO: ADD GRAVATAR URL HERE }}">
 <meta property="og:site_name" content="{{@blog.title}}">
-<meta property="fb:admins" content="">
 {{/post}}
 {{else}}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="{{> custom/twitter_handle}}">
+<meta name="twitter:site" content="{{! TODO: ADD TWITTER HANDLE HERE }}">
 <meta name="twitter:title" content="{{@blog.title}}">
 <meta name="twitter:description" content="{{@blog.description}}">
 <meta name="twitter:creator" content="{{@blog.title}}">
-<meta name="twitter:image:src" content="{{> custom/gravatar_url}}">
+<meta name="twitter:image:src" content="{{! TODO: ADD GRAVATAR URL HERE }}">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{@blog.title}}">
 <meta property="og:description" content="{{@blog.description}}">
-<meta property="og:image" content="{{> custom/gravatar_url}}">
+<meta property="og:image" content="{{! TODO: ADD GRAVATAR URL HERE }}">
 <meta property="og:site_name" content="{{@blog.title}}">
-<meta property="fb:admins" content="">
 {{/if}}
 
 <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
@@ -73,7 +71,8 @@
 <h1>{{@blog.title}}</h1>
 </a>
 <ul class="nav-primary">
-{{> custom/navigation this}}
+{{! TODO: Add URLs here }}
+<li><a href="{{@blog.url}}">Home</a></li>
 </ul>
 
 </nav>
@@ -89,8 +88,9 @@
       <p>{{@blog.title}}</p>
   </div>
   <aside class="offsite-links">
-    <a class="twitter-link" href="http://www.twitter.com/{{> custom/twitter_handle this}}">Twitter</a> /
-    <a class="github-link" href="http://github.com/{{> custom/github_handle this}}">GitHub</a> / 
+    
+    <a class="twitter-link" href="http://www.twitter.com/{{! TODO: ADD TWITTER HANDLE HERE }}">Twitter</a> /
+    <a class="github-link" href="http://github.com/{{! TODO: ADD GITHUB HANDLE }}">GitHub</a> / 
     <a class="rss-link" href="{{ @blog.url }}/rss">RSS</a>
     <p>
     <a target="_blank" href="https://github.com/roycehaynes/rollsroyce">rollsroyce theme</a> by <a target="_blank" href="http://www.twitter.com/roycehaynes">@roycehaynes</a>
@@ -98,21 +98,20 @@
     Powered by <a target="_blank" href="http://www.ghost.org">Ghost</a>
   </aside>
   <!-- javascripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="{{@blog.url}}/assets/js/fittext.js"></script>
-  <script src="{{@blog.url}}/assets/js/app.js"></script>
-  <script src="{{@blog.url}}/assets/js/respond.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="{{@blog.url}}/assets/js/fittext.js"></script>
+  <script type="text/javascript" src="{{@blog.url}}/assets/js/app.js"></script>
+  <script type="text/javascript" src="{{@blog.url}}/assets/js/respond.min.js"></script>
 
   <script type="text/javascript">
+    var ga_ua = '{{! TODO: SET GOOGLE ANALYTICS ID }}';
 
-  {{> custom/ga this}}
-
-  (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
-      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
-      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
-      t.src='//www.google-analytics.com/analytics.js';
-      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
-      ga('create',ga_ua);ga('send','pageview');
+    (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+        function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+        t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+        t.src='//www.google-analytics.com/analytics.js';
+        z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+        ga('create',ga_ua);ga('send','pageview');
   </script>
 
   
