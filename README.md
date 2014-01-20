@@ -1,7 +1,18 @@
-# Rolls Royce
+# Rolls Royce - A SEO friendly, responsive [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
 
-A [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
+### Features
 
+- Runs on Ghost v0.3.3 or greater
+- Responsive
+- Supports Twitter cards
+
+### TODO
+
+- Pagination
+- Author summary at end of posts
+- Cover image per each post
+- Externalize customizations via partials like Google Analytics ID, Twitter Handle, etc.
+- ?
 
 ### How to install
 
@@ -13,8 +24,4 @@ A [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
 
 4. On settings page, select rollsroyce as theme and save.
 
-5. To make custom changes, go to ```rollsroyce/partials/custom``` directory.
-
-Below are example variables. Note: You must only put one line per hbs file in the custom directory. The exception to this rule is navigation.hbs.
-
-TODO(royce): Add details.
+5. To make custom changes, go to ```default.hbs``` and search for 'TODOs' to add things like twitter handle, google analytics ID, etc. This is a temporary fix to a problem in Ghost v0.4. 
