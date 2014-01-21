@@ -4,25 +4,7 @@ Rolls Royce is a minimal and responsive [Ghost](http://ghost.org) theme focusing
 
 Expect updates - this theme is maturing along with Ghost. Feel free to [add suggested features](https://github.com/roycehaynes/rollsroyce/issues?state=open).
 
-### Releases
-
-See the [changelog](CHANGELOG.md) for release details.
-
-| Version | Release Date |
-| :-----: | :----------: |
-| 0.2 | 2014-01-19 |
-| 0.1.1 | 2014-01-05 |
-| 0.1 | 2014-01-05 |
-
-### TODO
-
-- Pagination
-- Author summary at end of posts
-- Cover image per each post
-- Externalize customizations via partials like Google Analytics ID, Twitter Handle, etc.
-- ?
-
-### How to install
+## How to install
 
 1. Navigate to your Ghost theme directory ghost/content/themes
 
@@ -33,3 +15,27 @@ See the [changelog](CHANGELOG.md) for release details.
 4. On settings page, select rollsroyce as theme and save.
 
 5. To make custom changes, go to ```default.hbs``` and search for 'TODOs' to add things like twitter handle, google analytics ID, etc. This is a temporary fix to a problem in Ghost v0.4. 
+
+*Note:* Ping me (royce dot haynes at gmail dot.com) if you have any issues.
+
+### Releases
+
+See the [changelog](CHANGELOG.md) for release details.
+
+| Version | Release Date |
+| :-----: | :----------: |
+| 0.2 | 2014-01-19 |
+| 0.1.1 | 2014-01-05 |
+| 0.1 | 2014-01-05 |
+
+## Contributing and Forking
+
+*RollsRoyce* is open source and released under the MIT License, and contributions to the code base are welcome and encouraged. Find [more information about contributing here](CONTRIBUTING.md).
+
+## Thanks
+
+Thanks to [@JohnONolan](http://twitter.com/JohnONolan), [@ErisDS](http://twitter.com/ErisDS), and the Ghost team for creating this blog platform.
+
+## Copyright & License
+
+Copyright (c) 2014 Royce Haynes - Released under The MIT License.
