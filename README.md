@@ -1,12 +1,18 @@
-### Rolls Royce - A SEO friendly, responsive [Ghost](https://ghost.org/) theme. See [example](http://www.roycehaynes.com).
+# Rolls Royce
 
-![Rolls Royce screenshot](https://raw.github.com/roycehaynes/rollsroyce/master/rollsroyce-2.png)
+Rolls Royce is a minimal and responsive [Ghost](http://ghost.org) theme focusing on your content. With smooth and slick javascripts transitions, you get a taste of what its like to experience luxurious content.
 
-### Features
+Expect updates - this theme is maturing along with Ghost. Feel free to [add suggested features](https://github.com/roycehaynes/rollsroyce/issues?state=open).
 
-- Runs on Ghost v0.3.3 or greater
-- Responsive
-- Supports Twitter cards
+### Releases
+
+See the [changelog](CHANGELOG.md) for release details.
+
+| Version | Release Date |
+| :-----: | :----------: |
+| 0.2 | 2014-01-19 |
+| 0.1.1 | 2014-01-05 |
+| 0.1 | 2014-01-05 |
 
 ### TODO
 
