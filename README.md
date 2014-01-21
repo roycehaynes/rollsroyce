@@ -18,7 +18,7 @@ Expect updates - this theme is maturing along with Ghost. Feel free to [add sugg
 
 *Note:* Ping me (royce dot haynes at gmail dot.com) if you have any issues.
 
-### Releases
+## Releases
 
 See the [changelog](CHANGELOG.md) for release details.
 
