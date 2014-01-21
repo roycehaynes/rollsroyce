@@ -1,6 +1,6 @@
 # Rolls Royce
 
-Rolls Royce is a minimal and responsive [Ghost](http://ghost.org) theme focusing on your content. With smooth and slick javascripts transitions, you get a taste of what its like to experience luxurious content. [See](http://roycehaynes.com) for yourself.
+Rolls Royce is a minimal and responsive [Ghost](http://ghost.org) theme focusing on your content. With smooth and slick javascripts transitions, the experience is elegant and simple - just like the Ghost blogging platform. [See](http://roycehaynes.com) for yourself.
 
 Expect updates - this theme is maturing along with Ghost. Feel free to [add suggested features](https://github.com/roycehaynes/rollsroyce/issues?state=open).
 
