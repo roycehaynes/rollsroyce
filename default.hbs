@@ -60,64 +60,57 @@
 <body class="{{body_class}}">
 <div class="wrapper">
 
-<!-- MENU -->
+{{! Menu }}
 {{#if post}}
 <nav class="nav fixed">
 {{else}}
 <nav class="nav">
 {{/if}}
-
-<a id="logo" href="{{@blog.url}}">
-<h1>{{@blog.title}}</h1>
-</a>
-<ul class="nav-primary">
-{{! TODO: Add URLs here }}
-<li><a href="{{@blog.url}}">Home</a></li>
-</ul>
-
+    <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+    <ul class="nav-primary">
+        {{! TODO: Add URLs here }}
+        <li><a href="{{@blog.url}}">Home</a></li>
+    </ul>
 </nav>
 
 {{! Everything else gets inserted here }}
 {{{body}}}
 
 <footer class="footer">
-  <div class="back-to-top">
-    <a href="">Back to top</a>
-  </div>
-  <div class="footer-nav">
-      <p>{{@blog.title}}</p>
-  </div>
-  <aside class="offsite-links">
-    
-    <a class="twitter-link" href="http://www.twitter.com/{{! TODO: ADD TWITTER HANDLE HERE }}">Twitter</a> /
-    <a class="github-link" href="http://github.com/{{! TODO: ADD GITHUB HANDLE }}">GitHub</a> / 
-    <a class="rss-link" href="{{ @blog.url }}/rss">RSS</a>
-    <p>
-    <a target="_blank" href="https://github.com/roycehaynes/rollsroyce">rollsroyce theme</a> by <a target="_blank" href="http://www.twitter.com/roycehaynes">@roycehaynes</a>
-    </p>
-    Powered by <a target="_blank" href="http://www.ghost.org">Ghost</a>
-  </aside>
-  <!-- javascripts -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="{{@blog.url}}/assets/js/fittext.js"></script>
-  <script type="text/javascript" src="{{@blog.url}}/assets/js/app.js"></script>
-  <script type="text/javascript" src="{{@blog.url}}/assets/js/respond.min.js"></script>
+    <div class="back-to-top"><a href="">Back to top</a></div>
+    <div class="footer-nav"><p>{{@blog.title}}</p></div>
 
-  <script type="text/javascript">
-    var ga_ua = '{{! TODO: SET GOOGLE ANALYTICS ID }}';
-
-    (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
-        function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
-        t=h.createElement(o);z=h.getElementsByTagName(o)[0];
-        t.src='//www.google-analytics.com/analytics.js';
-        z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
-        ga('create',ga_ua);ga('send','pageview');
-  </script>
-
-  
+    <aside class="offsite-links">
+        <a class="twitter-link" href="http://www.twitter.com/{{! TODO: ADD TWITTER HANDLE HERE }}">Twitter</a> /
+        <a class="github-link" href="http://github.com/{{! TODO: ADD GITHUB HANDLE }}">GitHub</a> / 
+        <a class="rss-link" href="{{ @blog.url }}/rss">RSS</a>
+        <p>
+        <a target="_blank" href="https://github.com/roycehaynes/rollsroyce">rollsroyce theme</a> by <a target="_blank" href="http://www.twitter.com/roycehaynes">@roycehaynes</a>
+        </p>
+        Powered by <a target="_blank" href="http://www.ghost.org">Ghost</a>
+    </aside>
 </footer>
-</div> <!-- end of wrapper -->
+
+</div> {{! End of wrapper }}
+
+{{! Scripts }}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{@blog.url}}/assets/js/fittext.js"></script>
+<script type="text/javascript" src="{{@blog.url}}/assets/js/app.js"></script>
+<script type="text/javascript" src="{{@blog.url}}/assets/js/respond.min.js"></script>
+<script type="text/javascript">
+  var ga_ua = '{{! TODO: SET GOOGLE ANALYTICS ID }}';
+
+  (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+      t.src='//www.google-analytics.com/analytics.js';
+      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+      ga('create',ga_ua);ga('send','pageview');
+</script>
+
 {{! Ghost outputs important scripts and data with this tag }}
 {{ghost_foot}}
+
 </body>
 </html>
