@@ -471,6 +471,36 @@ div.cover > img {
   text-align: center;
 }
 
+/*  Code
+================================================== */
+
+code, tt {
+background: #ededee;
+color: #3C4043;
+font-size: 90%;
+padding: 1px 3px;
+}
+
+pre {
+display: block;
+padding: 9.5px;
+margin: 0 0 28px;
+font-size: 90%;
+line-height: 1.428571429;
+word-break: break-all;
+word-wrap: break-word;
+background-color: #ededee;
+}
+
+pre code, tt {
+font-size: inherit;
+white-space: -moz-pre-wrap;
+white-space: pre-wrap;
+background: transparent;
+border: none;
+padding: 0;
+}
+
 
 /*  Responsive
 ================================================== */
