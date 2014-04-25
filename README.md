@@ -34,7 +34,9 @@ See the [changelog](CHANGELOG.md) for release details.
 
 ## Thanks
 
-Thanks to [@JohnONolan](http://twitter.com/JohnONolan), [@ErisDS](http://twitter.com/ErisDS), and the Ghost team for creating this blog platform.
+Thanks to [@JohnONolan](http://twitter.com/JohnONolan), [@ErisDS](http://twitter.com/ErisDS), and the Ghost team for creating this blog platform. 
+
+Special shout out to [Dave Gamache](http://blog.davegamache.com/articles), the original designer.
 
 ## Copyright & License
 
