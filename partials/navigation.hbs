@@ -1,0 +1,8 @@
+<nav class="nav{{#is 'post'}} fixed{{/is}}">
+    <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+    <ul class="nav-primary">
+        {{#foreach navigation}}
+            <li><a href="{{url}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+</nav>

@@ -61,17 +61,7 @@
 <div class="wrapper">
 
 {{! Menu }}
-{{#if post}}
-<nav class="nav fixed">
-{{else}}
-<nav class="nav">
-{{/if}}
-    <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
-    <ul class="nav-primary">
-        {{! TODO: Add URLs here }}
-        <li><a href="{{@blog.url}}">Home</a></li>
-    </ul>
-</nav>
+{{navigation}}
 
 {{! Everything else gets inserted here }}
 {{{body}}}
